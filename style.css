@@ -79,7 +79,7 @@ body {
 #mp1:focus {
   box-shadow: 0 14px 34px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.06);
   outline: none;
-  /* no transform here */
+  
 }
 
 /* Make buttons smaller on narrow screens and adjust positions */
@@ -216,5 +216,53 @@ padding: 16px;
 
 #btnReplaceAll {
 width: 100%;
+
+display: inline-block;
+margin: 12px auto 0;
+padding: 10px 18px;
+border-radius: 10px;
+border: 2px solid rgba(79,158,255,0.9);
+background: rgba(0,0,0,0.18);
+color: rgba(79,158,255,0.98);
+font-weight: 700;
+cursor: pointer;
+box-shadow: 0 8px 20px rgba(0,0,0,0.35);
 }
+}
+
+/* Back button styles */
+.back-button {
+  display: inline-block;
+  padding: 10px 18px;
+  background: rgba(169, 103, 245, 0.95);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(111, 50, 182, 0.95);
+  transition: background .15s ease, transform .08s ease;
+}
+
+.back-button:hover {
+  background: rgba(82, 35, 136, 0.95);
+  transform: translateY(-1px);
+}
+
+.back-button:active { transform: translateY(0); }
+
+.back-wrap {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 6%;
+  z-index: 12;
+  text-align: center;
+  width: 100%;
+  pointer-events: auto;
+  padding: 0 12px;
+}
+
+@media (max-width: 520px) {
+  .back-wrap { bottom: 3%; }
 }
