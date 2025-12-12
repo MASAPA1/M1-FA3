@@ -17,25 +17,24 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const txtInput = document.getElementById('txtInput');
-      const btnReplaceAll = document.getElementById('btnReplaceAll');
-      const txtOutput = document.getElementById('txtOutput');
+      const mp1 = document.getElementById('mp1');
+      const mp2 = document.getElementById('mp2');
 
-      const validateEmail = (email) => {
-        const e = (email || '').trim();
-        return e.includes('@') ? 'Valid' : 'Invalid';
-      };
+      if (mp1) {
+        mp1.addEventListener('click', () => {
+          // navigate in same tab:
+          window.location.href = 'https://masapa1.github.io/M1-FA3_botton1/';
+          
+        });
+      }
 
-      btnReplaceAll.addEventListener('click', () => {
-        const input = txtInput.value || '';
-        txtOutput.textContent = validateEmail(input);
-      });
-
-      txtInput.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter') btnReplaceAll.click();
-      });
+      // optional: keep mp2 inert or wire it later
+      if (mp2) {
+        mp2.addEventListener('click', () => {
+          
+        });
+      }
     });
   </script>
 </body>
-
 </html>
