@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (mp1) {
     mp1.addEventListener('click', () => {
       // navigate in same tab:
-      window.location.href = 'https://example.com';
+      window.location.href = 'https://masapa1.github.io/M1-FA3_botton1/';
     });
   }
 
@@ -15,4 +15,5 @@ document.addEventListener('DOMContentLoaded', () => {
       
     });
   }
+
 });
